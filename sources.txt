@@ -1,0 +1,9 @@
+# This file is an example configuration for backbash. 
+#
+# It lists filename globs to include or exclude from the backup. Globs to 
+# include are prefixed with "I ", and globs to exclude are prefixed with "X ".
+# Lines will be interpreted by Bash, so you should use single quotes to 
+# specify filenames with spaces. 
+I ~/.fonts
+I ~/.ssh
+X ~/tmp
