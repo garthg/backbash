@@ -41,18 +41,18 @@ globs. The syntax is as follows:
 Globs will be expanded by Bash.
 
 2. Run list.sh to generate a list of exact filenames.  
-`./list.sh <SOURCES>` where SOURCES is the filename of sources from step 1.  
-This will create a folder with a name like `backbash_<DATE>` where DATE is 
+`./list.sh SOURCES` where SOURCES is the filename of sources from step 1.  
+This will create a folder with a name like `backbash_DATE` where DATE is 
 today's date. The folder will contain lists of files. You can manually review
 these to ensure the globs in the SOURCES file worked correctly.
 
 3. Run backup.sh to copy files.  
-`./backup.sh backbash_<DATE> <OUTDIR>` where DATE is the date of the backbash
+`./backup.sh backbash_DATE OUTDIR` where DATE is the date of the backbash
 directory generated in step 2 above and OUTDIR is the destination directory
 to copy files.
 
 4. Run restore.sh to copy files back.  
-`./restore.sh <OUTDIR>` where OUTDIR is the directory specified in step 3
+`./restore.sh OUTDIR` where OUTDIR is the directory specified in step 3
 above.
 The files will be restored to their original locations on disk, using the full
 path.
@@ -62,7 +62,7 @@ files are NOT overwritten. If you are restoring configuration files, there may
 be blank or default configuration files that were automatically created at
 installation, and in order to restore your previously backed up configuration
 you should either delete the defaults before running restore.sh or manually
-copy the configuration files from their path in the directory `<OUTDIR>/backup`. 
+copy the configuration files from their path in the directory `OUTDIR/backup`. 
 
 Copyright and license
 =======
