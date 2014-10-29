@@ -1,5 +1,8 @@
 cd `dirname $0`
-sources=sources.txt
+if [ $# -ne 1 ]; then
+  echo "usage"
+exit
+sources=$1
 rundir="backbash_`date +%Y-%m-%d`"
 if [ ! -d $rundir ]; then
   mkdir -p $rundir

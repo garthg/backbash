@@ -31,8 +31,8 @@ Usage
 =====
 
 1. Create the list of file globs to be backed up.  
-Edit sources.txt to specify all inclusion and exclusion globs. The syntax is as
-follows:
+Edit a file like sources.txt to specify all inclusion and exclusion globs. The
+syntax is as follows:
  - Any line beginning with # is ignored.
  - To include a glob, add a line with "I " followed by the glob, like:  
    `I /path/to/include/*.txt`.
@@ -41,7 +41,7 @@ follows:
 Globs will be expanded by Bash.
 
 2. Run list.sh to generate a list of exact filenames.  
-`./list.sh`.
+`./list.sh <SOURCES>` where <SOURCES> is the filename of sources from step 1.  
 This will create a folder with a name like "backbash_<DATE>" where <DATE> is 
 today's date. The folder will contain lists of files. You can manually review
 these to ensure the globs in sources.txt worked correctly.
