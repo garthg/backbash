@@ -64,6 +64,22 @@ installation, and in order to restore your previously backed up configuration
 you should either delete the defaults before running restore.sh or manually
 copy the configuration files from their path in the directory "<OUTDIR>/backup". 
 
-License
+Copyright and license
 =======
-GPL v3. See LICENSE for details. 
+
+This file and other files in this repository are part of Backbash.
+
+Backbash is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Backbash is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Backbash. If not, see http://www.gnu.org/licenses/.
+
+Please see the file LICENSE for the license text.
+
