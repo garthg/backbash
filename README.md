@@ -30,28 +30,28 @@ that uses Bash as the shell.
 Usage
 =====
 
-1. Create the list of file globs to be backed up.
+1. Create the list of file globs to be backed up.  
 Edit sources.txt to specify all inclusion and exclusion globs. The syntax is as
 follows:
  - Any line beginning with # is ignored.
- - To include a glob, add a line with "I " followed by the glob, like:
+ - To include a glob, add a line with "I " followed by the glob, like:  
    `I /path/to/include/*.txt`.
- - To exclude a glob, add a line with "X " followed by the glob, like:
+ - To exclude a glob, add a line with "X " followed by the glob, like:  
    `X /path/to/exclude*.txt`.
 Globs will be expanded by Bash.
 
-2. Run list.sh to generate a list of exact filenames:
+2. Run list.sh to generate a list of exact filenames.  
 `./list.sh`.
 This will create a folder with a name like "selfback_<DATE>" where <DATE> is 
 today's date. The folder will contain lists of files. You can manually review
 these to ensure the globs in sources.txt worked correctly.
 
-3. Run backup.sh to copy files:
+3. Run backup.sh to copy files.  
 `./backup.sh selfback_<DATE> <OUTDIR>` where <DATE> is the date of the selfback
 directory generated in step 2 above and <OUTDIR> is the destination directory
 to copy files.
 
-4. Run restore.sh to copy files back:
+4. Run restore.sh to copy files back.  
 `./restore.sh <OUTDIR>` where <OUTDIR> is the directory specified in step 3
 above.
 The files will be restored to their original locations on disk, using the full
