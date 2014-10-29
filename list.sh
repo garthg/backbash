@@ -1,6 +1,6 @@
 cd `dirname $0`
 sources=sources.txt
-rundir="selfback_`date +%Y-%m-%d`"
+rundir="backbash_`date +%Y-%m-%d`"
 if [ ! -d $rundir ]; then
   mkdir -p $rundir
 fi

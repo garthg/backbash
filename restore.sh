@@ -1,6 +1,6 @@
 # This file can be run from anywhere and it will recreate the full paths of
 # the files that were backed up. It takes the backup directory e.g.
-# selfback_YYYY-MM-DD as the only command-line argument.
+# backbash_YYYY-MM-DD as the only command-line argument.
 
 if [ $# -ne 1 ]; then
   echo "usage"

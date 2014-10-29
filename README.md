@@ -42,12 +42,12 @@ Globs will be expanded by Bash.
 
 2. Run list.sh to generate a list of exact filenames.  
 `./list.sh`.
-This will create a folder with a name like "selfback_<DATE>" where <DATE> is 
+This will create a folder with a name like "backbash_<DATE>" where <DATE> is 
 today's date. The folder will contain lists of files. You can manually review
 these to ensure the globs in sources.txt worked correctly.
 
 3. Run backup.sh to copy files.  
-`./backup.sh selfback_<DATE> <OUTDIR>` where <DATE> is the date of the selfback
+`./backup.sh backbash_<DATE> <OUTDIR>` where <DATE> is the date of the backbash
 directory generated in step 2 above and <OUTDIR> is the destination directory
 to copy files.
 
